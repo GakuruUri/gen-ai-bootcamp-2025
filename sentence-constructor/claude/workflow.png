@@ -1,0 +1,32 @@
+Japanese Language Tutor System Architecture
+
+flowchart TD
+    subgraph Input
+        A[Student Input] --> B[Sentence Parser]
+        B --> C{Parse Type}
+    end
+
+    subgraph Analysis
+        C -->|Single Sentence| D[Simple Analysis]
+        C -->|Compound Sentence| E[Compound Analysis]
+        
+        D --> F[Vocabulary Extractor]
+        E --> F
+        
+        F --> G[Structure Generator]
+        G --> H[Clue Generator]
+    end
+
+    subgraph Output
+        H --> I[Vocabulary Table]
+        H --> J[Structure Template]
+        H --> K[Learning Clues]
+    end
+
+    subgraph State
+        L[(Student Progress)]
+        M[(Response History)]
+        
+        L --> H
+        M --> H
+    end
