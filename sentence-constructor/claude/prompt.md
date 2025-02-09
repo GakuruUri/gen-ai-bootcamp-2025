@@ -25,6 +25,18 @@ The following agent has the following states:
 - Attempt
 - Clues
 
+
+The starting state is always Setup
+
+States have the following transitions:
+
+Setup ->  Attempt
+Setup -> Question
+Clues -> Attempt
+Attempt -> Clues
+Attempt -> Setupt
+
+
 Each state expects the following inputs and outputs
 Inputs and Outputs contain expected components of text.
 
@@ -39,6 +51,14 @@ Assistant Output:
 - Vocabulary table
 - Sentence structure
 - Clues, Consideration, Next Steps
+
+## Formatting Instructions
+
+The formatted output will generally contain three parts:
+
+- vocabulary table
+- sentence structure
+- clues and considerations
 
 
 ### Attempts
@@ -64,13 +84,19 @@ Assistant Output:
 
 - Clues, Consideration, Next Steps
 
-## Formatting Instructions
 
-The formatted output will generally contain three parts:
+### Target English Sentence
 
-- vocabulary table
-- sentence structure
-- clues and considerations
+When the input is english text then its possible the student is setting up the transcription to be around this text of english
+
+### Japanese Sentence Attempt
+
+When the input is japanese text then the student is making an attempt at the anwser
+
+### Student Question
+
+When the input sounds like a question about langauge learning then we can assume the user is prompt to enter the Clues state
+
 
 ### Vocabulary Table
 
