@@ -11,9 +11,13 @@ A language learning school wants to build a prototype of learning portal which w
 - The database will be built using Go
 - The database will be sqlite
 - The API will be build using Gin
+- Mage is the task runner for go.
 - The API will always return JSON
 - There will be no authentication or authorization.
 - Everything will be treated as a single user
+
+## Directory structure.
+
 
 ## Database schema
 

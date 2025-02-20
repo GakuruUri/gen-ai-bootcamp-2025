@@ -1,0 +1,8 @@
+1. I need to build an API for our lang portal app. All required tech specs are in the @Backend-Technical-Specs..md, 
+give me a summary of what you plan to do, and then when we agree you can go ahead and execute the command to create the project.
+
+2. Ensure the seeds data is available.
+
+3. Can we group together the seeds and directories together in a folder called db.
+
+4. Please proceed and build the app in the backend_go directory.
